@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../typescript/importtest.ts"],
+  "sourcesContent": ["class MyObj {\r\n  constructor(foo: string, bar: number) {\r\n    this.foo = foo;\r\n    this.bar = bar;\r\n  }\r\n  foo: string;\r\n  bar: number;\r\n}\r\n"],
+  "mappings": "AAAA,YAAY;AAAA,EACV,YAAY,KAAa,KAAa;AACpC,SAAK,MAAM;AACX,SAAK,MAAM;AAAA;AAAA;",
+  "names": []
+}

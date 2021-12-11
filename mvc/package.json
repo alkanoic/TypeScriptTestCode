@@ -1,0 +1,23 @@
+{
+  "name": "mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "esbuild": "node esbuild.js",
+    "esbuild-prod": "node esbuild.js production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.46.1",
+    "@types/jquery": "^3.5.8",
+    "esbuild": "^0.13.13",
+    "glob": "^7.2.0"
+  }
+}

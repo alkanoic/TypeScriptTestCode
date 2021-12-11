@@ -1,0 +1,70 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (web)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/mvc/bin/Debug/net5.0/mvc.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/mvc",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": "Launch my cool app",
+      "type": "edge",
+      "request": "launch",
+      "url": "http://localhost:5000",
+      "webRoot": "${workspaceFolder}/mvc/wwwroot"
+    },
+    {
+      "name": ".NET Core Launch2 (web)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build2",
+      "program": "${workspaceFolder}/mvc2/bin/Debug/net6.0/mvc2.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/mvc2",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/mvc2/Views"
+      }
+    },
+    {
+      "name": "Launch my cool app2",
+      "type": "edge",
+      "request": "launch",
+      "url": "http://localhost:5001",
+      "webRoot": "${workspaceFolder}/mvc2/wwwroot"
+    },
+    {
+      "name": "esbuild watch",
+      "type": "node",
+      "args": ["esbuild"],
+      "cwd": "${workspaceFolder}/mvc2"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Compound",
+      "configurations": [".NET Core Launch (web)", "Launch my cool app"]
+    },
+    {
+      "name": "Compound2",
+      "configurations": [".NET Core Launch2 (web)", "esbuild watch", "Launch my cool app2"]
+    }
+  ]
+}

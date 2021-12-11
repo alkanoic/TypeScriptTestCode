@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../typescript/jqtest.ts"],
+  "sourcesContent": ["$(document).on('click', '.testid', () => {\r\n  console.log('hello');\r\n  const a = <number>$('#google').val();\r\n  const b: number = a;\r\n  console.log(b);\r\n  const c = new MyObj('123', 123);\r\n  console.log(JSON.stringify(c));\r\n  console.log(c);\r\n});\r\n"],
+  "mappings": "AAAA,EAAE,UAAU,GAAG,SAAS,WAAW,MAAM;AACvC,UAAQ,IAAI;AACZ,QAAM,IAAY,EAAE,WAAW;AAC/B,QAAM,IAAY;AAClB,UAAQ,IAAI;AACZ,QAAM,IAAI,IAAI,MAAM,OAAO;AAC3B,UAAQ,IAAI,KAAK,UAAU;AAC3B,UAAQ,IAAI;AAAA;",
+  "names": []
+}
