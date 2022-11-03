@@ -8,7 +8,8 @@
     "debug": "tsc --sourceMap true",
     "publish": "tsc",
     "esbuild": "node esbuild.js",
-    "esbuild-prod": "node esbuild.js production"
+    "esbuild-prod": "node esbuild.js production",
+    "tscnoemit": "tsc --noEmit"
   },
   "author": "",
   "license": "ISC",

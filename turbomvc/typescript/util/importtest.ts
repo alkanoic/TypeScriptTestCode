@@ -1,10 +1,10 @@
 export class MyObj {
-  constructor(foo: string, bar: number) {
+  constructor(foo: string, bar) {
     this.foo = foo;
     this.bar = bar;
   }
   foo: string;
-  bar: number;
+  bar;
 }
 
 export function AAA(): void {

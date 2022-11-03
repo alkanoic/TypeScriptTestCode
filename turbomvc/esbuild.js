@@ -15,12 +15,11 @@ require('esbuild').build({
   // loader: {
   //   '.svg': 'dataurl'
   // },
-  target: "es2017",
-  platform: "neutral",
+  target: "es2020",
   minify: argv[2] == 'production',
   sourcemap: argv[2] !== 'production',
   watch: argv[2] !== 'production',
   // keepNames: true,
-  treeShaking: false,
+  // treeShaking: false,
   // external: ["jquery"]
 }).catch(() => process.exit(1))
