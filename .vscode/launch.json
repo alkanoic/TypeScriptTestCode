@@ -22,7 +22,7 @@
     },
     {
       "name": "Launch my cool app",
-      "type": "edge",
+      "type": "msedge",
       "request": "launch",
       "url": "http://localhost:5000",
       "webRoot": "${workspaceFolder}/mvc/wwwroot"
@@ -45,7 +45,7 @@
     },
     {
       "name": "Launch my cool app2",
-      "type": "edge",
+      "type": "msedge",
       "request": "launch",
       "url": "http://localhost:5001",
       "webRoot": "${workspaceFolder}/mvc2/wwwroot"
@@ -55,6 +55,37 @@
       "type": "node",
       "args": ["esbuild"],
       "cwd": "${workspaceFolder}/mvc2"
+    },
+    {
+      "name": ".NET Core Turbomvc",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "turbomvc build",
+      "program": "${workspaceFolder}/turbomvc/bin/Debug/net6.0/turbomvc.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/turbomvc",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/turbomvc"
+      }
+    },
+    {
+      "name": "turbo esbuild watch",
+      "request": "launch",
+      "type": "node",
+      "args": ["esbuild.js"],
+      "cwd": "${workspaceFolder}/turbomvc"
+    },
+    {
+      "name": "Launch msedge",
+      "type": "msedge",
+      "request": "launch",
+      "url": "https://localhost:7123",
+      // "webRoot": "${workspaceFolder}/turbomvc/wwwroot"
+      "webRoot": "${workspaceFolder}/turbomvc/wwwroot"
     }
   ],
   "compounds": [
@@ -65,6 +96,10 @@
     {
       "name": "Compound2",
       "configurations": [".NET Core Launch2 (web)", "esbuild watch", "Launch my cool app2"]
+    },
+    {
+      "name": "TurboCompound",
+      "configurations": [".NET Core Turbomvc", "turbo esbuild watch", "Launch msedge"]
     }
   ]
 }

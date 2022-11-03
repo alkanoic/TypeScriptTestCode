@@ -1,0 +1,21 @@
+{
+  "name": "turbomvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "tsc --sourceMap true",
+    "publish": "tsc",
+    "esbuild": "node esbuild.js",
+    "esbuild-prod": "node esbuild.js production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.15.13",
+    "glob": "^8.0.3",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.4"
+  }
+}

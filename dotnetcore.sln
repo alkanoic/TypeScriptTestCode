@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc", "mvc\mvc.csproj", "{2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapi", "webapi\webapi.csproj", "{A9F9D708-6F9D-408C-BF37-B1D414FA4163}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "turbomvc", "turbomvc\turbomvc.csproj", "{26CA1507-A1FC-4DC8-B170-1D9F297A5602}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{A9F9D708-6F9D-408C-BF37-B1D414FA4163}.Release|x64.Build.0 = Release|Any CPU
 		{A9F9D708-6F9D-408C-BF37-B1D414FA4163}.Release|x86.ActiveCfg = Release|Any CPU
 		{A9F9D708-6F9D-408C-BF37-B1D414FA4163}.Release|x86.Build.0 = Release|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Debug|x64.Build.0 = Debug|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Debug|x86.Build.0 = Debug|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Release|x64.ActiveCfg = Release|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Release|x64.Build.0 = Release|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Release|x86.ActiveCfg = Release|Any CPU
+		{26CA1507-A1FC-4DC8-B170-1D9F297A5602}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

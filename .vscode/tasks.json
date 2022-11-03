@@ -66,6 +66,26 @@
       "type": "shell",
       "args": ["run", "esbuild-prod"],
       "options": { "cwd": "${workspaceFolder}/mvc2" }
+    },
+    {
+      "label": "turbomvc esbuild",
+      "command": "npm",
+      "type": "shell",
+      "args": ["run", "esbuild"],
+      "options": { "cwd": "${workspaceFolder}/turbomvc" }
+    },
+    {
+      "label": "turbomvc build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/turbomvc/turbomvc.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+      // "dependsOn": "turbomvc esbuild"
     }
   ]
 }
