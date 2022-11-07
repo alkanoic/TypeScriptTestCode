@@ -88,7 +88,33 @@
       "url": "https://localhost:7123",
       // "webRoot": "${workspaceFolder}/turbomvc/wwwroot"
       "webRoot": "${workspaceFolder}/turbomvc/wwwroot"
-    }
+    },
+    {
+      "name": "turbo-debug-hot-reload",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "dotnet",
+      "args": [
+          "watch",
+          "--project",
+          ".",
+          "--verbose"
+      ],
+      "cwd": "${workspaceFolder}/turbomvc",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+          "action": "openExternally",
+          "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "Key": "Value"
+      },
+      "sourceFileMap": {
+          "/Views": "${workspaceFolder}/turbomvc/Views"
+      }
+    },
   ],
   "compounds": [
     {
@@ -102,6 +128,10 @@
     {
       "name": "TurboCompound",
       "configurations": [".NET Core Turbomvc", "turbo esbuild watch", "Launch msedge"]
+    },
+    {
+      "name": "TurboCompound2",
+      "configurations": ["turbo-debug-hot-reload", "turbo esbuild watch", "Launch msedge"]
     }
   ]
 }
