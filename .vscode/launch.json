@@ -54,7 +54,9 @@
       "name": "esbuild watch",
       "request": "launch",
       "type": "node",
-      "args": ["esbuild"],
+      "args": [
+        "esbuild"
+      ],
       "cwd": "${workspaceFolder}/mvc2"
     },
     {
@@ -77,7 +79,9 @@
       "name": "turbo esbuild watch",
       "request": "launch",
       "type": "node",
-      "args": ["esbuild.js"],
+      "args": [
+        "esbuild.js"
+      ],
       "cwd": "${workspaceFolder}/turbomvc",
       "preLaunchTask": "turbomvc tsc"
     },
@@ -93,45 +97,59 @@
       "name": "turbo-debug-hot-reload",
       "type": "coreclr",
       "request": "launch",
-      "preLaunchTask": "build",
+      "preLaunchTask": "turbomvc build",
       "program": "dotnet",
       "args": [
-          "watch",
-          "--project",
-          ".",
-          "--verbose"
+        "watch",
+        "--project",
+        ".",
+        "--verbose"
       ],
       "cwd": "${workspaceFolder}/turbomvc",
       "stopAtEntry": false,
       "serverReadyAction": {
-          "action": "openExternally",
-          "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
       },
       "env": {
-          "ASPNETCORE_ENVIRONMENT": "Development",
-          "Key": "Value"
+        "ASPNETCORE_ENVIRONMENT": "Development",
       },
       "sourceFileMap": {
-          "/Views": "${workspaceFolder}/turbomvc/Views"
+        "/Views": "${workspaceFolder}/turbomvc"
       }
     },
   ],
   "compounds": [
     {
       "name": "Compound",
-      "configurations": [".NET Core Launch (web)", "Launch my cool app"]
+      "configurations": [
+        ".NET Core Launch (web)",
+        "Launch my cool app"
+      ]
     },
     {
       "name": "Compound2",
-      "configurations": [".NET Core Launch2 (web)", "esbuild watch", "Launch my cool app2"]
+      "configurations": [
+        ".NET Core Launch2 (web)",
+        "esbuild watch",
+        "Launch my cool app2"
+      ]
     },
     {
       "name": "TurboCompound",
-      "configurations": [".NET Core Turbomvc", "turbo esbuild watch", "Launch msedge"]
+      "configurations": [
+        ".NET Core Turbomvc",
+        "turbo esbuild watch",
+        "Launch msedge"
+      ]
     },
     {
       "name": "TurboCompound2",
-      "configurations": ["turbo-debug-hot-reload", "turbo esbuild watch", "Launch msedge"]
+      "configurations": [
+        "turbo-debug-hot-reload",
+        "turbo esbuild watch",
+        "Launch msedge"
+      ]
     }
   ]
 }
