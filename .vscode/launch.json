@@ -118,6 +118,18 @@
         "/Views": "${workspaceFolder}/turbomvc"
       }
     },
+    {
+      "type": "dotnetwatchattach",
+      "request": "launch",
+      "name": ".NET Watch Attach",
+      "args": {
+        "env": {
+          "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+      },
+      "task": "watchTaskName",
+      "program": "turbomvc.exe"
+    },
   ],
   "compounds": [
     {

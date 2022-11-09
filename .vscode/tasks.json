@@ -43,7 +43,10 @@
       "label": "esbuild",
       "command": "npm",
       "type": "shell",
-      "args": ["run", "esbuild"],
+      "args": [
+        "run",
+        "esbuild"
+      ],
       "options": {
         "cwd": "${workspaceFolder}/mvc"
       }
@@ -64,15 +67,25 @@
       "label": "tsc",
       "command": "npm",
       "type": "shell",
-      "args": ["run", "esbuild-prod"],
-      "options": { "cwd": "${workspaceFolder}/mvc2" }
+      "args": [
+        "run",
+        "esbuild-prod"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/mvc2"
+      }
     },
     {
       "label": "turbomvc tsc",
       "command": "npm",
       "type": "shell",
-      "args": ["run", "tscnoemit"],
-      "options": { "cwd": "${workspaceFolder}/turbomvc" }
+      "args": [
+        "run",
+        "tscnoemit"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/turbomvc"
+      }
     },
     {
       "label": "turbomvc build",
@@ -86,6 +99,21 @@
       ],
       "problemMatcher": "$msCompile"
       // "dependsOn": "turbomvc esbuild"
+    },
+    {
+      "label": "watchTaskName",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "--project",
+        "${workspaceFolder}/turbomvc/turbomvc.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      // "problemMatcher": "$msCompile",
+      "isBackground": true
     }
   ]
 }
