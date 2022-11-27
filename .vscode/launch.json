@@ -153,15 +153,17 @@
         ".NET Core Turbomvc",
         "turbo esbuild watch",
         "Launch msedge"
-      ]
+      ],
+      "stopAll": true
     },
     {
       "name": "TurboCompound2",
       "configurations": [
         "turbo-debug-hot-reload",
         "turbo esbuild watch",
-        // "Launch msedge"
-      ]
+        "Launch msedge"
+      ],
+      "stopAll": true
     }
   ]
 }
