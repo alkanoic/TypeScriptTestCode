@@ -160,7 +160,7 @@
       "configurations": [
         "turbo-debug-hot-reload",
         "turbo esbuild watch",
-        "Launch msedge"
+        // "Launch msedge"
       ]
     }
   ]

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/turbomvc.styles.css" asp-append-version="true" />
+    <script type="module" src="~/js/littest.js" asp-append-version="true"></script>
 </head>
 
 <body>
@@ -27,6 +28,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home"
                                 asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Lit" asp-action="Index">Lit</a>
                         </li>
                     </ul>
                 </div>
@@ -49,6 +53,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/imported.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-</body>
+    </bod y>
 
 </html>
