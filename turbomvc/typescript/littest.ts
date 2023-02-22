@@ -92,3 +92,32 @@ export class MySlotElement extends LitElement {
     `;
   }
 }
+
+@customElement('reactive-element')
+export class ReactiveElement extends LitElement {
+  // observed attribute name is "myvalue"
+  @property({ type: Number })
+  myValue = 0;
+
+  // Observed attribute will be called my-name
+  @property({
+    attribute: 'my-name',
+    hasChanged(newVal: string, oldVal: string) {
+      console.log(`${oldVal} to ${newVal}`);
+      // falseの場合はHTMLタグのattributeが変わっても、プロパティは変わらない
+      return true;
+    },
+  })
+  myName = 'Ogden';
+
+  // No observed attribute for this property
+  @property({ attribute: false })
+  myData = {};
+
+  protected render() {
+    return html`<div>
+      <p>${this.myValue}</p>
+      <p>${this.myName}</p>
+    </div>`;
+  }
+}

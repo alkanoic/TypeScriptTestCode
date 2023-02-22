@@ -740,6 +740,38 @@
   MySlotElement = __decorateClass([
     e4("my-slot-element")
   ], MySlotElement);
+  var ReactiveElement = class extends s4 {
+    constructor() {
+      super(...arguments);
+      this.myValue = 0;
+      this.myName = "Ogden";
+      this.myData = {};
+    }
+    render() {
+      return y`<div>
+      <p>${this.myValue}</p>
+      <p>${this.myName}</p>
+    </div>`;
+    }
+  };
+  __decorateClass([
+    e5({ type: Number })
+  ], ReactiveElement.prototype, "myValue", 2);
+  __decorateClass([
+    e5({
+      attribute: "my-name",
+      hasChanged(newVal, oldVal) {
+        console.log(`${oldVal} to ${newVal}`);
+        return true;
+      }
+    })
+  ], ReactiveElement.prototype, "myName", 2);
+  __decorateClass([
+    e5({ attribute: false })
+  ], ReactiveElement.prototype, "myData", 2);
+  ReactiveElement = __decorateClass([
+    e4("reactive-element")
+  ], ReactiveElement);
 })();
 /**
  * @license

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../typescript/util/importtest.ts", "../../typescript/imported.ts"],
-  "sourcesContent": ["export class MyObj {\n  constructor(foo: string, bar: number) {\n    this.foo = foo;\n    this.bar = bar;\n  }\n  foo: string;\n  bar: number;\n}\n\nexport function AAA(): void {\n  console.log('aadfad');\n  console.log('aaaa');\n}\n", "import { AAA, MyObj } from './util/importtest';\n\nconst a = new MyObj('name', 123);\nconst b = new MyObj('aaaa', 12344);\nAAA();\n"],
+  "sourcesContent": ["export class MyObj {\r\n  constructor(foo: string, bar: number) {\r\n    this.foo = foo;\r\n    this.bar = bar;\r\n  }\r\n  foo: string;\r\n  bar: number;\r\n}\r\n\r\nexport function AAA(): void {\r\n  console.log('aadfad');\r\n  console.log('aaaa');\r\n}\r\n", "import { AAA, MyObj } from './util/importtest';\r\n\r\nconst a = new MyObj('name', 123);\r\nconst b = new MyObj('aaaa', 12344);\r\nAAA();\r\n"],
   "mappings": ";;;AAAO,MAAM,QAAN,MAAY;AAAA,IACjB,YAAY,KAAa,KAAa;AACpC,WAAK,MAAM;AACX,WAAK,MAAM;AAAA,IACb;AAAA,EAGF;AAEO,WAAS,MAAY;AAC1B,YAAQ,IAAI,QAAQ;AACpB,YAAQ,IAAI,MAAM;AAAA,EACpB;;;ACVA,MAAM,IAAI,IAAI,MAAM,QAAQ,GAAG;AAC/B,MAAM,IAAI,IAAI,MAAM,QAAQ,KAAK;AACjC,MAAI;",
   "names": []
 }
